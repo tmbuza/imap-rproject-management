@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>3 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>2 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content='3.1 Installing and Initializing renv if (!require("renv")) {  install.packages("renv") } library(renv) renv::init()  3.2 Installing renv in Other Environments  3.2.1 Install renv if Not Installed...'>
+<meta name="description" content="How to use In this section you will find R code snippets enclosed in ```R code chunks. Follow along and execute the provided code snippets in your R environment for hands-on training  Target...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="3 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="2 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://tmbuza.github.io/imap-rproject-management/approaches-to-using-renv.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
-<meta property="og:description" content='3.1 Installing and Initializing renv if (!require("renv")) {  install.packages("renv") } library(renv) renv::init()  3.2 Installing renv in Other Environments  3.2.1 Install renv if Not Installed...'>
+<meta property="og:description" content="How to use In this section you will find R code snippets enclosed in ```R code chunks. Follow along and execute the provided code snippets in your R environment for hands-on training  Target...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content='3.1 Installing and Initializing renv if (!require("renv")) {  install.packages("renv") } library(renv) renv::init()  3.2 Installing renv in Other Environments  3.2.1 Install renv if Not Installed...'>
+<meta name="twitter:title" content="2 Approaches to Using renv | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="How to use In this section you will find R code snippets enclosed in ```R code chunks. Follow along and execute the provided code snippets in your R environment for hands-on training  Target...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -72,15 +72,11 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">IMAP-RENV: A Package for Managing R Project Environments</a></li>
-<li class="book-part">R PROJECT ENVIRONMENT</li>
-<li><a class="" href="training-document-introduction-to-renv.html"><span class="header-section-number">1</span> Training Document: Introduction to renv</a></li>
-<li class="book-part">R ENVIRONMENT</li>
-<li><a class="" href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">2</span> Importance of Using renv in R Projects:</a></li>
-<li><a class="active" href="approaches-to-using-renv.html"><span class="header-section-number">3</span> Approaches to Using renv</a></li>
-<li><a class="" href="sharing-r-project.html"><span class="header-section-number">4</span> Sharing R Project</a></li>
-<li><a class="" href="key-considerations.html"><span class="header-section-number">5</span> Key Considerations</a></li>
-<li><a class="" href="troubleshooting.html"><span class="header-section-number">6</span> Troubleshooting</a></li>
+<li><a class="" href="index.html">IMAP-RENV: Package for Managing R Project Environments</a></li>
+<li class="book-part">RENV FOR R-PROJECT</li>
+<li><a class="" href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">1</span> Importance of Using renv in R Projects:</a></li>
+<li><a class="active" href="approaches-to-using-renv.html"><span class="header-section-number">2</span> Approaches to Using renv</a></li>
+<li><a class="" href="troubleshooting.html"><span class="header-section-number">3</span> Troubleshooting</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
 <li><a class="" href="rproject-management-rulegraph.html"><span class="header-section-number">B</span> Rproject-Management Rulegraph</a></li>
@@ -93,13 +89,36 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="approaches-to-using-renv" class="section level1" number="3">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="approaches-to-using-renv" class="section level1" number="2">
 <h1>
-<span class="header-section-number">3</span> Approaches to Using <code>renv</code><a class="anchor" aria-label="anchor" href="#approaches-to-using-renv"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> Approaches to Using <code>renv</code><a class="anchor" aria-label="anchor" href="#approaches-to-using-renv"><i class="fas fa-link"></i></a>
 </h1>
-<div id="installing-and-initializing-renv" class="section level2" number="3.1">
+<div id="how-to-use" class="section level2 unnumbered">
+<h2>How to use<a class="anchor" aria-label="anchor" href="#how-to-use"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>In this section you will find R code snippets enclosed in ```R code chunks.</li>
+<li>Follow along and execute the provided code snippets in your R environment for hands-on training</li>
+</ul>
+</div>
+<div id="target-audience" class="section level2 unnumbered">
+<h2>Target audience<a class="anchor" aria-label="anchor" href="#target-audience"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Data analysts, scientists, and researchers.</li>
+<li>Anyone interested in reproducible R projects.</li>
+</ul>
+</div>
+<div id="prerequisites" class="section level2 unnumbered">
+<h2>Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Basic knowledge of R and RStudio.</li>
+</ul>
+</div>
+<div id="installing-and-initializing-renv" class="section level2" number="2.1">
 <h2>
-<span class="header-section-number">3.1</span> Installing and Initializing <code>renv</code><a class="anchor" aria-label="anchor" href="#installing-and-initializing-renv"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.1</span> Installing and initializing <code>renv</code><a class="anchor" aria-label="anchor" href="#installing-and-initializing-renv"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="st"><a href="https://rstudio.github.io/renv/">"renv"</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
@@ -108,56 +127,90 @@
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://rstudio.github.io/renv/">renv</a></span><span class="op">)</span></span>
 <span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/init.html">init</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="installing-renv-in-other-environments" class="section level2" number="3.2">
+<div id="installing-renv-in-other-environments" class="section level2" number="2.2">
 <h2>
-<span class="header-section-number">3.2</span> Installing renv in Other Environments<a class="anchor" aria-label="anchor" href="#installing-renv-in-other-environments"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.2</span> Installing renv in other environments<a class="anchor" aria-label="anchor" href="#installing-renv-in-other-environments"><i class="fas fa-link"></i></a>
 </h2>
-<div id="install-renv-if-not-installed" class="section level3" number="3.2.1">
-<h3>
-<span class="header-section-number">3.2.1</span> Install renv if Not Installed<a class="anchor" aria-label="anchor" href="#install-renv-if-not-installed"><i class="fas fa-link"></i></a>
-</h3>
+<ul>
+<li>Install renv if Not Installed</li>
+</ul>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"renv"</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div id="initialize-the-r-environment" class="section level3" number="3.2.2">
-<h3>
-<span class="header-section-number">3.2.2</span> Initialize the R Environment<a class="anchor" aria-label="anchor" href="#initialize-the-r-environment"><i class="fas fa-link"></i></a>
-</h3>
+<ul>
+<li>Initialize the R Environment</li>
+</ul>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/init.html">init</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div id="restore-dependencies" class="section level3" number="3.2.3">
-<h3>
-<span class="header-section-number">3.2.3</span> Restore Dependencies<a class="anchor" aria-label="anchor" href="#restore-dependencies"><i class="fas fa-link"></i></a>
-</h3>
+<ul>
+<li>Restore Dependencies</li>
+</ul>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/restore.html">restore</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div id="optionally-update-renv" class="section level3" number="3.2.4">
-<h3>
-<span class="header-section-number">3.2.4</span> Optionally Update <code>renv</code><a class="anchor" aria-label="anchor" href="#optionally-update-renv"><i class="fas fa-link"></i></a>
-</h3>
+<ul>
+<li>Optionally Update <code>renv</code>
+</li>
+</ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/update.html">update</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
+<div id="sharing-r-project" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Sharing R Project<a class="anchor" aria-label="anchor" href="#sharing-r-project"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Share the Lockfile <code>renv.lock</code>
+</li>
+<li>Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.</li>
+<li>Collaborators can clone the repository but initially won’t have a local <code>renv/</code> folder.</li>
+<li>Need to run <code><a href="https://rstudio.github.io/renv/reference/init.html">renv::init()</a></code> in their R console within the project directory to initialize the renv environment based on the information stored in renv.lock.</li>
+<li>The <code>renv/</code> folder is automatically created by renv when collaborators run <code><a href="https://rstudio.github.io/renv/reference/init.html">renv::init()</a></code>. This folder contains the local package cache, information about the project’s R environment, and other renv-related files.</li>
+<li>Collaborators can run renv::restore() to install the project dependencies specified in renv.lock.</li>
+</ul>
+</div>
+<div id="explore-other-renv-commands" class="section level2" number="2.4">
+<h2>
+<span class="header-section-number">2.4</span> Explore other renv commands<a class="anchor" aria-label="anchor" href="#explore-other-renv-commands"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/status.html">status</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># Check status</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu">diff</span><span class="op">(</span><span class="op">)</span> <span class="co"># Check Changes</span></span></code></pre></div>
+</div>
+<div id="key-considerations" class="section level2" number="2.5">
+<h2>
+<span class="header-section-number">2.5</span> Key considerations<a class="anchor" aria-label="anchor" href="#key-considerations"><i class="fas fa-link"></i></a>
+</h2>
+<p>To ensure a smooth collaborative experience and reproducibility in your R project, here are key take-home points:</p>
+<ul>
+<li><p><strong>Version control with <code>renv.lock</code>:</strong>
+Include <code>renv.lock</code> in your Version Control System (VCS) to encapsulate specific package versions crucial for your project’s reproducibility.</p></li>
+<li><p><strong>Cloning the repository:</strong>
+Collaborators can effortlessly clone the repository, but initially, they won’t find a local <code>renv/</code> folder.</p></li>
+<li><p><strong>Initializing <code>renv</code> environment:</strong>
+Collaborators should execute <code><a href="https://rstudio.github.io/renv/reference/init.html">renv::init()</a></code> in their R console within the project directory. This command initializes the <code>renv</code> environment based on the information stored in <code>renv.lock</code>.</p></li>
+<li><p><strong>Automatic creation of <code>renv/</code> Folder:</strong>
+When collaborators run <code><a href="https://rstudio.github.io/renv/reference/init.html">renv::init()</a></code>, the <code>renv/</code> folder is automatically generated. This folder encompasses the local package cache, project-specific R environment details, and additional <code>renv</code>-related files.</p></li>
+<li><p><strong>Restoring project dependencies:</strong>
+Collaborators, post <code><a href="https://rstudio.github.io/renv/reference/init.html">renv::init()</a></code>, need to run <code><a href="https://rstudio.github.io/renv/reference/restore.html">renv::restore()</a></code> to install the project dependencies specified in <code>renv.lock</code>. This step guarantees the setup of an identical R environment.</p></li>
+</ul>
+<p>These considerations collectively establish a robust foundation for collaboration and reproducibility in your R project.</p>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">2</span> Importance of Using renv in R Projects:</a></div>
-<div class="next"><a href="sharing-r-project.html"><span class="header-section-number">4</span> Sharing R Project</a></div>
+<div class="prev"><a href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">1</span> Importance of Using renv in R Projects:</a></div>
+<div class="next"><a href="troubleshooting.html"><span class="header-section-number">3</span> Troubleshooting</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#approaches-to-using-renv"><span class="header-section-number">3</span> Approaches to Using renv</a></li>
-<li><a class="nav-link" href="#installing-and-initializing-renv"><span class="header-section-number">3.1</span> Installing and Initializing renv</a></li>
-<li>
-<a class="nav-link" href="#installing-renv-in-other-environments"><span class="header-section-number">3.2</span> Installing renv in Other Environments</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#install-renv-if-not-installed"><span class="header-section-number">3.2.1</span> Install renv if Not Installed</a></li>
-<li><a class="nav-link" href="#initialize-the-r-environment"><span class="header-section-number">3.2.2</span> Initialize the R Environment</a></li>
-<li><a class="nav-link" href="#restore-dependencies"><span class="header-section-number">3.2.3</span> Restore Dependencies</a></li>
-<li><a class="nav-link" href="#optionally-update-renv"><span class="header-section-number">3.2.4</span> Optionally Update renv</a></li>
-</ul>
-</li>
+<li><a class="nav-link" href="#approaches-to-using-renv"><span class="header-section-number">2</span> Approaches to Using renv</a></li>
+<li><a class="nav-link" href="#how-to-use">How to use</a></li>
+<li><a class="nav-link" href="#target-audience">Target audience</a></li>
+<li><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+<li><a class="nav-link" href="#installing-and-initializing-renv"><span class="header-section-number">2.1</span> Installing and initializing renv</a></li>
+<li><a class="nav-link" href="#installing-renv-in-other-environments"><span class="header-section-number">2.2</span> Installing renv in other environments</a></li>
+<li><a class="nav-link" href="#sharing-r-project"><span class="header-section-number">2.3</span> Sharing R Project</a></li>
+<li><a class="nav-link" href="#explore-other-renv-commands"><span class="header-section-number">2.4</span> Explore other renv commands</a></li>
+<li><a class="nav-link" href="#key-considerations"><span class="header-section-number">2.5</span> Key considerations</a></li>
 </ul>
 
       <div class="book-extra">

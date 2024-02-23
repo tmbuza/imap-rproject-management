@@ -42,12 +42,12 @@ description: |
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
-# <u>IMAP-RENV</u>: A Package for Managing R Project Environments {-#renv}
+# <u>IMAP-RENV</u>: Package for Managing R Project Environments {-#renv}
 
 <br>
-![Book cover](images/renv.png){width=80%}
+![](images/renv.png){width=80%}
 
-## Understanding the Role of `renv` in Achieving Reproducibility {-}
+## Role of `renv` in achieving reproducibility {-}
 This document provides a comprehensive introduction to renv, a package for managing R project environments and ensuring reproducibility in data analysis workflows. Renv plays a pivotal role in the pursuit of reproducibility by providing a framework for managing R project environments. It facilitates the creation of isolated and consistent R environments, capturing dependencies and package versions. This ensures that collaborators, whether researchers or data analysts, can reproduce the exact computational environment used in a project. Renv's functionality extends to capturing package versions, enabling version control, and promoting collaboration, all of which are critical elements in establishing and maintaining reproducibility in data analysis workflows.
 
 

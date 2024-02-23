@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>4 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>3 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content="4.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  4.2 Collaborators’ Setup...">
+<meta name="description" content="3.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  3.2 Collaborators’ Setup...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="4 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="3 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://tmbuza.github.io/imap-rproject-management/sharing-r-project.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
-<meta property="og:description" content="4.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  4.2 Collaborators’ Setup...">
+<meta property="og:description" content="3.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  3.2 Collaborators’ Setup...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content="4.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  4.2 Collaborators’ Setup...">
+<meta name="twitter:title" content="3 Sharing R Project | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="3.1 Share the Lockfile renv.lock Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.  3.2 Collaborators’ Setup...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -72,15 +72,13 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">IMAP-RENV: A Package for Managing R Project Environments</a></li>
-<li class="book-part">R PROJECT ENVIRONMENT</li>
-<li><a class="" href="training-document-introduction-to-renv.html"><span class="header-section-number">1</span> Training Document: Introduction to renv</a></li>
-<li class="book-part">R ENVIRONMENT</li>
-<li><a class="" href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">2</span> Importance of Using renv in R Projects:</a></li>
-<li><a class="" href="approaches-to-using-renv.html"><span class="header-section-number">3</span> Approaches to Using renv</a></li>
-<li><a class="active" href="sharing-r-project.html"><span class="header-section-number">4</span> Sharing R Project</a></li>
-<li><a class="" href="key-considerations.html"><span class="header-section-number">5</span> Key Considerations</a></li>
-<li><a class="" href="troubleshooting.html"><span class="header-section-number">6</span> Troubleshooting</a></li>
+<li><a class="" href="index.html">IMAP-RENV: Package for Managing R Project Environments</a></li>
+<li class="book-part">RENV FOR R-PROJECT</li>
+<li><a class="" href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">1</span> Importance of Using renv in R Projects:</a></li>
+<li><a class="" href="approaches-to-using-renv.html"><span class="header-section-number">2</span> Approaches to Using renv</a></li>
+<li><a class="active" href="sharing-r-project.html"><span class="header-section-number">3</span> Sharing R Project</a></li>
+<li><a class="" href="key-considerations.html"><span class="header-section-number">4</span> Key Considerations</a></li>
+<li><a class="" href="troubleshooting.html"><span class="header-section-number">5</span> Troubleshooting</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
 <li><a class="" href="rproject-management-rulegraph.html"><span class="header-section-number">B</span> Rproject-Management Rulegraph</a></li>
@@ -93,21 +91,21 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="sharing-r-project" class="section level1" number="4">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="sharing-r-project" class="section level1" number="3">
 <h1>
-<span class="header-section-number">4</span> Sharing R Project<a class="anchor" aria-label="anchor" href="#sharing-r-project"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3</span> Sharing R Project<a class="anchor" aria-label="anchor" href="#sharing-r-project"><i class="fas fa-link"></i></a>
 </h1>
-<div id="share-the-lockfile-renv.lock" class="section level2" number="4.1">
+<div id="share-the-lockfile-renv.lock" class="section level2" number="3.1">
 <h2>
-<span class="header-section-number">4.1</span> Share the Lockfile renv.lock<a class="anchor" aria-label="anchor" href="#share-the-lockfile-renv.lock"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.1</span> Share the Lockfile renv.lock<a class="anchor" aria-label="anchor" href="#share-the-lockfile-renv.lock"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Include renv.lock in Version Control as it contains information about the specific versions of packages used in your project.</li>
 </ul>
 </div>
-<div id="collaborators-setup" class="section level2" number="4.2">
+<div id="collaborators-setup" class="section level2" number="3.2">
 <h2>
-<span class="header-section-number">4.2</span> Collaborators’ Setup<a class="anchor" aria-label="anchor" href="#collaborators-setup"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.2</span> Collaborators’ Setup<a class="anchor" aria-label="anchor" href="#collaborators-setup"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Collaborators can clone the repository but initially won’t have a local <code>renv/</code> folder.</li>
@@ -116,9 +114,9 @@
 </ul>
 <p>Collaborators run renv::restore() to install the project dependencies specified in renv.lock.</p>
 </div>
-<div id="explore-other-renv-commands" class="section level2" number="4.3">
+<div id="explore-other-renv-commands" class="section level2" number="3.3">
 <h2>
-<span class="header-section-number">4.3</span> Explore Other renv Commands<a class="anchor" aria-label="anchor" href="#explore-other-renv-commands"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3</span> Explore Other renv Commands<a class="anchor" aria-label="anchor" href="#explore-other-renv-commands"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">renv</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/renv/reference/status.html">status</a></span><span class="op">(</span><span class="op">)</span> <span class="co">## Check status</span></span></code></pre></div>
@@ -127,15 +125,15 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="approaches-to-using-renv.html"><span class="header-section-number">3</span> Approaches to Using renv</a></div>
-<div class="next"><a href="key-considerations.html"><span class="header-section-number">5</span> Key Considerations</a></div>
+<div class="prev"><a href="approaches-to-using-renv.html"><span class="header-section-number">2</span> Approaches to Using renv</a></div>
+<div class="next"><a href="key-considerations.html"><span class="header-section-number">4</span> Key Considerations</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#sharing-r-project"><span class="header-section-number">4</span> Sharing R Project</a></li>
-<li><a class="nav-link" href="#share-the-lockfile-renv.lock"><span class="header-section-number">4.1</span> Share the Lockfile renv.lock</a></li>
-<li><a class="nav-link" href="#collaborators-setup"><span class="header-section-number">4.2</span> Collaborators’ Setup</a></li>
-<li><a class="nav-link" href="#explore-other-renv-commands"><span class="header-section-number">4.3</span> Explore Other renv Commands</a></li>
+<li><a class="nav-link" href="#sharing-r-project"><span class="header-section-number">3</span> Sharing R Project</a></li>
+<li><a class="nav-link" href="#share-the-lockfile-renv.lock"><span class="header-section-number">3.1</span> Share the Lockfile renv.lock</a></li>
+<li><a class="nav-link" href="#collaborators-setup"><span class="header-section-number">3.2</span> Collaborators’ Setup</a></li>
+<li><a class="nav-link" href="#explore-other-renv-commands"><span class="header-section-number">3.3</span> Explore Other renv Commands</a></li>
 </ul>
 
       <div class="book-extra">

@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>6 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines</title>
+<title>2 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines</title>
 <meta name="author" content="Teresia Mrema-Buza">
-<meta name="description" content="6.1 Managing Independent renv Environments If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential...">
+<meta name="description" content="If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential problems: Remove current renv files Delete the...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
-<meta property="og:title" content="6 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta property="og:title" content="2 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://tmbuza.github.io/imap-rproject-management/troubleshooting.html">
 <meta property="og:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
-<meta property="og:description" content="6.1 Managing Independent renv Environments If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential...">
+<meta property="og:description" content="If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential problems: Remove current renv files Delete the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="6 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines">
-<meta name="twitter:description" content="6.1 Managing Independent renv Environments If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential...">
+<meta name="twitter:title" content="2 Troubleshooting | IMAP: Integrated Microbiome Analysis Pipelines">
+<meta name="twitter:description" content="If you encounter conflicts or issues related to renv in your standalone repositories, follow these steps to ensure independence and resolve potential problems: Remove current renv files Delete the...">
 <meta name="twitter:image" content="https://tmbuza.github.io/imap-rproject-management/images/planning.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -72,15 +72,9 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">IMAP-RENV: A Package for Managing R Project Environments</a></li>
-<li class="book-part">R PROJECT ENVIRONMENT</li>
-<li><a class="" href="training-document-introduction-to-renv.html"><span class="header-section-number">1</span> Training Document: Introduction to renv</a></li>
-<li class="book-part">R ENVIRONMENT</li>
-<li><a class="" href="importance-of-using-renv-in-r-projects.html"><span class="header-section-number">2</span> Importance of Using renv in R Projects:</a></li>
-<li><a class="" href="approaches-to-using-renv.html"><span class="header-section-number">3</span> Approaches to Using renv</a></li>
-<li><a class="" href="sharing-r-project.html"><span class="header-section-number">4</span> Sharing R Project</a></li>
-<li><a class="" href="key-considerations.html"><span class="header-section-number">5</span> Key Considerations</a></li>
-<li><a class="active" href="troubleshooting.html"><span class="header-section-number">6</span> Troubleshooting</a></li>
+<li><a class="" href="index.html">IMAP-RENV: Package for Managing R Project Environments</a></li>
+<li><a class="" href="creating-and-maintaining-renv-in-an-r-project.html"><span class="header-section-number">1</span> Creating and Maintaining renv in an R Project</a></li>
+<li><a class="active" href="troubleshooting.html"><span class="header-section-number">2</span> Troubleshooting</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></li>
 <li><a class="" href="rproject-management-rulegraph.html"><span class="header-section-number">B</span> Rproject-Management Rulegraph</a></li>
@@ -93,24 +87,20 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="troubleshooting" class="section level1" number="6">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="troubleshooting" class="section level1" number="2">
 <h1>
-<span class="header-section-number">6</span> Troubleshooting<a class="anchor" aria-label="anchor" href="#troubleshooting"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> Troubleshooting<a class="anchor" aria-label="anchor" href="#troubleshooting"><i class="fas fa-link"></i></a>
 </h1>
-<div id="managing-independent-renv-environments" class="section level2" number="6.1">
-<h2>
-<span class="header-section-number">6.1</span> Managing Independent <code>renv</code> Environments<a class="anchor" aria-label="anchor" href="#managing-independent-renv-environments"><i class="fas fa-link"></i></a>
-</h2>
 <p>If you encounter conflicts or issues related to <code>renv</code> in your standalone repositories, follow these steps to ensure independence and resolve potential problems:</p>
 <ol style="list-style-type: decimal">
 <li>
-<p><strong>Remove Current <code>renv</code> Files:</strong></p>
+<p><strong>Remove current <code>renv</code> files</strong></p>
 <ul>
 <li>Delete the existing <code>renv</code> folder and <code>renv.lock</code> file in each standalone repository. This ensures a clean start without any pre-existing <code>renv</code> configuration.</li>
 </ul>
 </li>
 <li>
-<p><strong>Install <code>renv</code> and Initialize:</strong></p>
+<p><strong>Install <code>renv</code> and initialize</strong></p>
 <ul>
 <li>
 <p>In each repository, run the following commands in your R console:</p>
@@ -123,7 +113,7 @@
 <p>This will initialize a new <code>renv</code> environment for the specific repository.</p>
 </li>
 <li>
-<p><strong>Snapshot Dependencies:</strong></p>
+<p><strong>Snapshot Dependencies</strong></p>
 <ul>
 <li>
 <p>After initializing, take a snapshot of the project dependencies using:</p>
@@ -134,7 +124,7 @@
 <p>This will create or update the <code>renv.lock</code> file based on the current state of the project.</p>
 </li>
 <li>
-<p><strong>Check Status and Update <code>renv</code>:</strong></p>
+<p><strong>Check Status and Update <code>renv</code></strong></p>
 <ul>
 <li>Optionally, you can check the status to ensure everything is in order:</li>
 </ul>
@@ -151,19 +141,15 @@
 <p>By following these troubleshooting steps for each standalone repository, you’ll have a clean and independent <code>renv</code> setup for each project, reducing the chances of conflicts between repositories.</p>
 
 </div>
-</div>
 
 
 
   <div class="chapter-nav">
-<div class="prev"><a href="key-considerations.html"><span class="header-section-number">5</span> Key Considerations</a></div>
+<div class="prev"><a href="creating-and-maintaining-renv-in-an-r-project.html"><span class="header-section-number">1</span> Creating and Maintaining renv in an R Project</a></div>
 <div class="next"><a href="imap-github-repos.html"><span class="header-section-number">A</span> IMAP GitHub Repos</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#troubleshooting"><span class="header-section-number">6</span> Troubleshooting</a></li>
-<li><a class="nav-link" href="#managing-independent-renv-environments"><span class="header-section-number">6.1</span> Managing Independent renv Environments</a></li>
-</ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#troubleshooting"><span class="header-section-number">2</span> Troubleshooting</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
