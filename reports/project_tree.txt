@@ -1,0 +1,30 @@
+Project Tree
+[01;34m.[0m
+├── [00m00-preface.Rmd[0m
+├── [00m99-appendix.Rmd[0m
+├── [00m999-references.Rmd[0m
+├── [00m9999-footer.Rmd[0m
+├── [00m_bookdown.yml[0m
+├── [00m_output.yml[0m
+├── [01;34mdags[0m
+│   ├── [00mrulegraph.png[0m
+│   └── [00mrulegraph.svg[0m
+├── [01;34mimages[0m
+├── [00mimap-rproject-management.Rproj[0m
+├── [00mindex.Rmd[0m
+├── [00minstalled_packages.txt[0m
+├── [01;34moutput[0m
+├── [01;34mrenv[0m
+│   ├── [00mactivate.R[0m
+│   ├── [01;34mlibrary[0m
+│   └── [00msettings.json[0m
+├── [00mrenv.lock[0m
+├── [01;34mreports[0m
+│   ├── [00mproject_tree.txt[0m
+│   └── [00msnakemake_report.html[0m
+├── [00mstyle.css[0m
+└── [01;34mworkflow[0m
+    ├── [00mSnakefile[0m
+    └── [01;34mscripts[0m
+
+9 directories, 18 files
