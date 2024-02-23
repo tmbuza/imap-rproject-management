@@ -2,6 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
+.Rapp.history
 
-renv/
 .snakemake
+
+.DS_Store
+
+data/*
+images/*
+results/*
+resources/*
+renv/
