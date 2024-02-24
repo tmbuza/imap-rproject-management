@@ -1,4 +1,4 @@
-# Creating and Maintaining renv in an R Project
+# Creating and Maintaining renv in an R Project {#create-maintain-renv}
 
 ## Install `renv`
 If you haven't installed renv globally, do so by running the following command in your R console:
@@ -34,10 +34,17 @@ renv::snapshot()
 - Examine the generated `renv.lock` file to ensure it accurately captures your project's dependencies of your interest.
 - Modify the lock file if necessary.
 
-## Ignore `renv.lock` in version control
-- Add `renv.lock` to your project's .gitignore (or equivalent for your version control system) to avoid version conflicts.
+## Ignore or share `renv.lock` in version control
 
-> It's generally not recommended to include the entire `renv/` directory in version control.
+**For Users: Ignore `renv.lock` in Version Control:**
+
+If you are a user reproducing the analysis, you can ignore the `renv.lock` file in version control. It is already included in the repository to help you recreate the exact environment used for the analysis.
+
+**For Collaborators: Share `renv.lock` in Version Control:**
+
+Collaborators actively contributing to the project should include the `renv.lock` file in version control. This ensures consistency among team members by using the same package versions and configurations. 
+
+> Note: It is generally not recommended to include the entire `renv/` directory in version control, as it is automatically managed by `renv`.
 
 
 ## Install renv in other environments
@@ -56,30 +63,21 @@ renv::update()
 
 ```
 
-## Sharing Your Project:
+## Sharing Your Project
 
 - If sharing your project with others, provide them with the renv.lock file.
 - They can then initialize the environment using renv::init() and restore dependencies with renv::restore().
 
-## Additional renv Commands:
-- Explore other renv commands for more functionality, such as renv::status() to check the status of your environment and renv::diff() to see changes.
+## Additional renv Commands
+- Explore other renv commands for more functionality, such as renv::status() to check the status of your environment.
 
-## Managing Package Versions:
+## Managing Package Versions
 - For more granular control, you can specify package versions in your R scripts or the renv.lock file.
 
+<br>
 
 By following these steps, you establish a reproducible and isolated environment for your R project using renv. This ensures that others can recreate the same environment, reducing potential compatibility issues and making your project more collaborative and shareable.
 
-## Explore other renv commands
-```R
-renv::status() # Check status
-
-```
-
-```R
-renv::diff() # Check Changes
-
-```
 
 ## Key considerations
 
@@ -89,7 +87,7 @@ To ensure a smooth collaborative experience and reproducibility in your R projec
   Include `renv.lock` in your Version Control System (VCS) to encapsulate specific package versions crucial for your project's reproducibility.
 
 - **Cloning the repository:**
-  Collaborators can effortlessly clone the repository, but initially, they won't find a local `renv/` folder.
+  Collaborators can effortlessly clone the repository, but initially, they won't find a local `renv/` folder as it is ignored.
 
 - **Initializing `renv` environment:**
   Collaborators should execute `renv::init()` in their R console within the project directory. This command initializes the `renv` environment based on the information stored in `renv.lock`.

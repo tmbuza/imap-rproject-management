@@ -1,15 +1,14 @@
-creating-and-maintaining-renv-in-an-r-project
+create-maintain-renv
 install-renv
 initialize-renv-in-your-project
 snapshot-your-project-dependencies
 review-and-modify-renv.lock
-ignore-renv.lock-in-version-control
+ignore-or-share-renv.lock-in-version-control
 install-renv-in-other-environments
 updating-dependencies
 sharing-your-project
 additional-renv-commands
 managing-package-versions
-explore-other-renv-commands
 key-considerations
 troubleshooting
 imap-github-repos

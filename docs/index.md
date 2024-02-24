@@ -42,7 +42,7 @@ description: |
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
-# <u>IMAP-RENV</u>: Package for Managing R Project Environments {-#renv}
+# <u>IMAP-RENV</u>: Setting Up and Using `renv` for Reproducibility {-#renv}
 
 <br>
 ![](images/renv.png){width=80%}
