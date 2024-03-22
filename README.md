@@ -1,8 +1,11 @@
-# (APPENDIX) APPENDIX {-}
+# IMAP Project Overview
 
-# IMAP GitHub Repos
+---In Progress---
 
-```{block type="tmbinfo", echo=TRUE}
+<br>
+
+# Related Works
+## IMAP GitHub Repos
 
 | IMAP-Repo                                      | Description                                               | GH-Pages                                             |
 | :---------------------------------------------- | :--------------------------------------------------------- | :-----------------------------------------------------: |
@@ -15,25 +18,17 @@
 | [PART 06](https://github.com/tmbuza/imap-bioinformatics-qiime2/) | Microbial profiling using QIIME2 and Snakemake workflows | [Link](https://tmbuza.github.io/imap-qiime2-bioinformatics/) |
 | [PART 07](https://github.com/tmbuza/imap-data-processing/) | Processing Output from 16S-Based microbiome bioinformatics pipelines | [Link](https://tmbuza.github.io/imap-data-preparation/) |
 | [PART 08](https://github.com/tmbuza/imap-exploratory-analysis/) | Exploratory Analysis of 16S-Based Microbiome Processed Data | [Link](https://tmbuza.github.io/imap-data-exploration/) |
-```
 
-# Rproject-Management Rulegraph
 
-![](dags/rulegraph.svg)
+## Session information
 
-# Session Information
+For a detailed overview of the tools and versions suitable for this guide, explore the [session information](session_info.txt).
 
-Reproducibility relies on the ability to precisely recreate the working environment, and session information serves as a vital reference to achieve this consistency. Here we record details about the R environment, package versions, and system settings of the computing environment at the time of analysis. 
+## Citation
+> Please consider citing the [iMAP article](https://rdcu.be/b5iVj) if you find any part of the iMAP practical user guides helpful in your microbiome data analysis.
 
-```{r sessioninfo}
-library(sessioninfo)
+Buza, T. M., Tonui, T., Stomeo, F., Tiambo, C., Katani, R., Schilling, M., … Kapur, V. (2019). iMAP: An integrated bioinformatics and visualization pipeline for microbiome data analysis. BMC Bioinformatics, 20. https://doi.org/10.1186/S12859-019-2965-4
 
-# Get session info
-info <- capture.output(print(session_info()))
-
-# Exclude lines containing specific information (e.g., pandoc and library path)
-info_filtered <- info[!grepl("pandoc|/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/|/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library|*/Users/*", info)]
-
-# Save the filtered session info to a text file in the root directory without line numbers
-cat(info_filtered, file = "session_info.txt", sep = "\n")
-```
+## :tada: Raise awareness
+> Please help increase awareness of freely available tools for microbiome data analysis.
+See [Dimensions of the iMAP article](https://badge.dimensions.ai/details/id/pub.1117740326)

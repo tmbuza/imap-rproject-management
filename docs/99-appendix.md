@@ -19,7 +19,7 @@
 <tbody>
 <tr class="odd">
 <td align="left"><a
-href="https://github.com/datainsights/imap-project-overview/">IMAP-OVERVIEW</a></td>
+href="https://github.com/tmbuza/imap-project-overview/">IMAP-OVERVIEW</a></td>
 <td>IMAP project overview</td>
 <td align="right"><a
 href="https://tmbuza.github.io/imap-project-overview/">In-progress</a></td>
@@ -114,12 +114,28 @@ Reproducibility relies on the ability to precisely recreate the working environm
 
 ```r
 library(sessioninfo)
+library(sessioninfo)
 
 # Get session info
 info <- capture.output(print(session_info()))
 
-# Exclude lines containing specific information (e.g., pandoc and library path)
-info_filtered <- info[!grepl("pandoc|/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/|/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library", info)]
+# Define patterns to exclude
+library(sessioninfo)
+
+# Get session info
+info <- capture.output(print(session_info()))
+
+# Define patterns to exclude
+exclude_patterns <- c("/Users/.*", "Africa/Dar_es_Salaam") # This line is location-dependent
+
+# Exclude lines containing specific information
+info_filtered <- info[!grepl(paste(exclude_patterns, collapse = "|"), info)]
+
+# Save the filtered session info to a text file in the root directory without line numbers
+cat(info_filtered, file = "session_info.txt", sep = "\n")
+
+# Exclude lines containing specific information
+info_filtered <- info[!grepl(paste(exclude_patterns, collapse = "|"), info)]
 
 # Save the filtered session info to a text file in the root directory without line numbers
 cat(info_filtered, file = "session_info.txt", sep = "\n")
